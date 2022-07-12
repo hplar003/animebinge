@@ -1,0 +1,105 @@
+$buttonColor: #106580;
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:transparent;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    // padding-left: 90px;
+    padding-top: 75px;
+    z-index: 100;
+      h3{
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 700;
+        margin-left: 90px;
+       
+      }
+      @media only screen 
+      and (min-device-width: 320px) 
+      and (max-device-width: 480px)
+      and (-webkit-min-device-pixel-ratio: 2) {
+        .menu-item{
+          display: flex;
+         align-items: center;
+         justify-content: space-around;
+         margin-top: 60px;
+         margin-left: -80px;
+         
+        }
+        .buttons{
+          display: flex;
+
+        }
+    }
+}
+.menu-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+       a{
+        text-decoration: none;
+        color: #fff;
+        margin-right: 53px;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+       }
+       .signup{
+        border: 1px solid #FFFFFF;
+        border-radius: 5px;
+        background-color: transparent;
+        color: #fff;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        padding: 13px 27px;
+        cursor: pointer;
+        &:hover{
+            background-color: $buttonColor;
+        }
+       }
+       .signin{
+        background-color: $buttonColor;
+        border-radius: 5px;
+        color: #fff;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        padding: 13px 27px;
+        border: none;
+        cursor: pointer;
+        &:hover{
+            background-color: transparent;
+        }
+       }
+}
+
+@media only screen 
+and (min-device-width: 220px) 
+and (max-device-width: 580px)
+and (-webkit-min-device-pixel-ratio: 2){
+  .navbar{
+    justify-content: space-between;
+    padding-top: 40px;
+   
+  }
+  .signup{
+
+    font-size: 12px;
+    line-height: 7px;
+    padding: 7px 27px;
+   }
+   .signin{
+    font-size: 12px;
+    line-height: 7px;
+    padding: 7px 27px;
+  }
+    
+}

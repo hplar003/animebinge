@@ -1,0 +1,20 @@
+
+
+body{
+    background-color: #1A1A1A;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: #fff;
+}
+@media only screen 
+and (min-device-width: 220px) 
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2){
+    .footer{
+        width: 700px;
+       
+    }
+    
+}
